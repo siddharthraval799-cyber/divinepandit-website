@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | DivinePandit</title>
+    <title>Daily Panchang | DivinePandit</title>
     <meta name="description"
-        content="Contact DivinePandit for any pooja services. We come to your location.">
+        content="View Daily Panchang, Sunrise, Sunset, Moonrise, Moonset details, and Zodiac signs with DivinePandit.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -129,76 +129,81 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero choghadiya-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/hero_banner_1779175566471.png'); min-height: 400px; height: 50vh;">
+        <section class="hero panchang-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/hero_banner_1779175566471.png'); min-height: 400px; height: 50vh;">
             <div class="container hero-content">
-                <h1 style="font-size: 3rem; margin-bottom: 10px;">CONTACT US</h1>
-                <p style="font-size: 1.1rem; color: #ddd;">Home » Contact Us</p>
+                <h1 style="font-size: 3rem; margin-bottom: 10px;">DAILY PANCHANG</h1>
+                <p style="font-size: 1.1rem; color: #ddd;">Home » Panchang</p>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact-page-section section-padding" style="background-color: var(--bg-light);">
+        <!-- Panchang Section -->
+        <section class="panchang-section section-padding">
             <div class="container">
-                <!-- Info Cards -->
-                <div class="contact-cards" style="display: flex; gap: 30px; margin-bottom: 60px; justify-content: center; flex-wrap: wrap;">
+                <div class="panchang-card">
+                    <h2 class="panchang-title">दैनिक पंचांग (Daily Panchang)</h2>
                     
-                    <div class="contact-card">
-                        <div class="card-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>DIVINEPANDIT</h3>
-                        <p>You Call, We Come To Your Location!</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="card-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>EMAIL ADDRESS</h3>
-                        <a href="mailto:info@divinepandit.com">info@divinepandit.com</a>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="card-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3>PHONE NUMBER</h3>
-                        <a href="tel:+916356647453">+91 6356647453</a>
-                        <br>
-                        <a href="tel:+917600576209">+91 7600576209</a>
-                    </div>
-
-                </div>
-
-                <!-- Inquiry Form -->
-                <div class="inquiry-form-container">
-                    <h2 class="form-title">INQUIRY FORM</h2>
-                    <form class="booking-form inquiry-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email Address *" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Phone Number *" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject *" required>
-                            </div>
-                        </div>
+                    <div class="panchang-form">
                         <div class="form-group">
-                            <textarea class="form-control" rows="4" placeholder="Your Message *" required></textarea>
+                            <label>भाषा (Language)</label>
+                            <select class="form-control">
+                                <option>हिंदी (Hindi)</option>
+                                <option>English (English)</option>
+                            </select>
                         </div>
-                        <div class="text-center" style="margin-top: 20px;">
-                            <button type="submit" class="btn btn-submit" style="background-color: #ff0000; width: auto; max-width: none; box-shadow: none;"><i class="fas fa-paper-plane"></i> SEND MESSAGE</button>
+                        <div class="form-group city-group">
+                            <label>शहर का नाम (City Name)</label>
+                            <input type="text" class="form-control" value="New Delhi, India" readonly>
                         </div>
-                    </form>
+                        <div class="form-group btn-group">
+                            <button class="btn btn-primary panchang-btn"><i class="fas fa-search"></i> पंचांग देखें</button>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center" style="margin-top: 15px;">
+                        <a href="#" class="other-dates-link">अन्य तिथियों के लिए देखें</a>
+                    </div>
                 </div>
 
+                <div class="today-panchang-wrapper text-center">
+                    <h2 class="today-panchang-title">आज का पंचांग</h2>
+                    <p class="today-panchang-date" id="panchangDateDisplay">May 21, Thursday | New Delhi, India</p>
+                </div>
+
+                <div class="panchang-details-card">
+                    <div class="details-header">
+                        <h3><i class="fas fa-cloud-sun"></i> सूर्य और चंद्रमा विवरण</h3>
+                        <button class="btn-share"><i class="fas fa-share-alt"></i> Share</button>
+                    </div>
+
+                    <div class="sun-moon-grid">
+                        <div class="sm-card">
+                            <i class="fas fa-sun sm-icon sun-icon"></i>
+                            <h4>सूर्योदय</h4>
+                            <p>बहुत सवेरे 5:30 बजे</p>
+                        </div>
+                        <div class="sm-card">
+                            <i class="fas fa-sun sm-icon sunset-icon"></i>
+                            <h4>सूर्यास्त</h4>
+                            <p>शाम 7:09 बजे</p>
+                        </div>
+                        <div class="sm-card">
+                            <i class="fas fa-moon sm-icon moon-icon"></i>
+                            <h4>चंद्रोदय</h4>
+                            <p>सुबह 9:40 बजे</p>
+                        </div>
+                        <div class="sm-card">
+                            <i class="fas fa-moon sm-icon moonset-icon"></i>
+                            <h4>चंद्रास्त</h4>
+                            <p>रात 11:56 बजे</p>
+                        </div>
+                    </div>
+
+                    <div class="zodiac-info">
+                        <span><i class="fas fa-circle" style="font-size: 8px;"></i> सूर्य राशि: <strong style="color: #e67e22;">वृषभ (कृत्तिका)</strong></span>
+                        <span><i class="fas fa-circle" style="font-size: 8px;"></i> चन्द्र राशि: <strong style="color: #3498db;">कर्क</strong></span>
+                        <span><i class="fas fa-circle" style="font-size: 8px;"></i> अयन: <strong>24 13'41" (उत्तरायण)</strong></span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -226,7 +231,7 @@
                         <li><a href="#">Gallery</a></li>
                         <li><a href="#">Videos</a></li>
                         <li><a href="#">Blogs</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Be a Pandit</a></li>
                     </ul>
                 </div>
@@ -261,6 +266,15 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateDisplay = document.getElementById('panchangDateDisplay');
+            const today = new Date();
+            const options = { month: 'short', day: 'numeric', weekday: 'long' };
+            const formattedDate = today.toLocaleDateString('en-US', options);
+            dateDisplay.innerText = `${formattedDate} | New Delhi, India`;
+        });
+    </script>
 </body>
 
 </html>

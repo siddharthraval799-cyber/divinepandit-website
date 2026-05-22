@@ -44,78 +44,79 @@
             <nav class="nav-links">
                 <ul>
                     <li class="dropdown">
-                        <a href="#services">Puja Services <i class="fas fa-chevron-down"></i></a>
+                        <a href="javascript:void(0)" onclick="openAllServicesModal()">Puja Services <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
                                 <a href="#">Puran Katha <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <li><a href="#">Bhagwat Katha</a></li>
-                                    <li><a href="#">Shiv Maha Puran</a></li>
-                                    <li><a href="#">Ram Katha</a></li>
-                                    <li><a href="#">Shrimad Devi Bhagwat Puran</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('bhagwat')">Bhagwat Katha</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('shivpuran')">Shiv Maha Puran</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('ramkatha')">Ram Katha</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('devibhagwat')">Shrimad Devi Bhagwat Puran</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
-                                <a href="#">Shanti Puja <i class="fas fa-chevron-right"></i></a>
+                                <a href="javascript:void(0)">Shanti Puja <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <li><a href="#">Narayanbali Pitrushraddh Vidhi</a></li>
-                                    <li><a href="#">Kaal Sarp Yog</a></li>
-                                    <li><a href="#">Nakshatra Shanti</a></li>
-                                    <li><a href="#">Vastu Shanti</a></li>
-                                    <li><a href="#">Nav Grah Shanti</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('narayanbali')">Narayanbali Pitrushraddh Vidhi</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('kaalsarp')">Kaal Sarp Yog</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('nakshatrashanti')">Nakshatra Shanti</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('vastushanti')">Vastu Shanti</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('navgrah')">Nav Grah Shanti</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
-                                <a href="#">Havan / Yagna <i class="fas fa-chevron-right"></i></a>
+                                <a href="javascript:void(0)">Havan / Yagna <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <li><a href="#">Marriage Ceremony</a></li>
-                                    <li><a href="#">Shat Chandi Yagna</a></li>
-                                    <li><a href="#">Rudra Havan</a></li>
-                                    <li><a href="#">Sri Suktam Havan</a></li>
-                                    <li><a href="#">Maha Mrityunjay Jap</a></li>
-                                    <li><a href="#">Vishnu Yagna</a></li>
-                                    <li><a href="#">Ganesh Yagna</a></li>
-                                    <li><a href="#">Navchandi Yagna</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('wedding')">Marriage Ceremony</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('shatchandi')">Shat Chandi Yagna</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('rudrahavan')">Rudra Havan</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('srisuktam')">Sri Suktam Havan</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('mrityunjay')">Maha Mrityunjay Jap</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('vishnuyagna')">Vishnu Yagna</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('ganeshyagna')">Ganesh Yagna</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('navchandi')">Navchandi Yagna</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
-                                <a href="#">Sanskar Vidhi <i class="fas fa-chevron-right"></i></a>
+                                <a href="javascript:void(0)">Sanskar Vidhi <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <li><a href="#">Chaul Sanskar</a></li>
-                                    <li><a href="#">Namkaran Sanskar</a></li>
-                                    <li><a href="#">Srimant Sanskar</a></li>
-                                    <li><a href="#">Yagnopavit Sanskar</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('chaul')">Chaul Sanskar</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('namkaran')">Namkaran Sanskar</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('srimant')">Srimant Sanskar</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('yagnopavit')">Yagnopavit Sanskar</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
-                                <a href="#">Sthapan Puja <i class="fas fa-chevron-right"></i></a>
+                                <a href="javascript:void(0)">Sthapan Puja <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <li><a href="#">Ghat Sthapna</a></li>
-                                    <li><a href="#">Rudra Abhishek</a></li>
-                                    <li><a href="#">Laghu Rudra</a></li>
-                                    <li><a href="#">Maha Rudra Pooja</a></li>
-                                    <li><a href="#">Ati Rudra Pooja</a></li>
-                                    <li><a href="#">Murti Pranpratishtha</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('ghatsthapna')">Ghat Sthapna</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('rudraabhishek')">Rudra Abhishek</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('laghurudra')">Laghu Rudra</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('maharudra')">Maha Rudra Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('atirudra')">Ati Rudra Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('murtipranpratishtha')">Murti Pranpratishtha</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
-                                <a href="#">Festival Puja <i class="fas fa-chevron-right"></i></a>
+                                <a href="javascript:void(0)">Festival Puja <i class="fas fa-chevron-right"></i></a>
                                 <ul class="dropdown-menu sub-menu">
-                                    <li><a href="#">Office Pooja</a></li>
-                                    <li><a href="#">Diwali Pooja</a></li>
-                                    <li><a href="#">Navratri Pooja</a></li>
-                                    <li><a href="#">Durga Pooja</a></li>
-                                    <li><a href="#">Lakshmi Pooja</a></li>
-                                    <li><a href="#">Vishwakarma Pooja</a></li>
-                                    <li><a href="#">Ganesh Pooja</a></li>
-                                    <li><a href="#">SatyaNarayan Katha</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('office')">Office Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('diwali')">Diwali Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('navratri')">Navratri Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('durga')">Durga Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('lakshmi')">Lakshmi Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('vishwakarma')">Vishwakarma Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('ganesh')">Ganesh Pooja</a></li>
+                                    <li><a href="javascript:void(0)" onclick="openServiceModal('satyanarayan')">SatyaNarayan Katha</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
+                    <li><a href="panchang.html">Panchang</a></li>
                     <li><a href="choghadiya.html">Choghadiya</a></li>
                     <li><a href="destination-wedding.html">Destination Wedding</a></li>
-                    <li><a href="#">NRI Services</a></li>
+                    <li><a href="nri-services.html">NRI Services</a></li>
                     <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -213,8 +214,10 @@
                             <h3>Shrimad Bhagwat Katha</h3>
                             <p>Shrimad Bhagwat is the image of the God of God and that is why it is worshiped in
                                 reverence. By its recitation and...</p>
-                            <span class="price">Price: On Request</span>
-                            <a href="book-now.html" class="btn btn-outline">Book Now</a>
+                            <div class="service-actions" style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                                <button class="btn btn-primary" onclick="openServiceModal('bhagwat')">View Details</button>
+                                <a href="book-now.html" class="btn btn-outline">Book Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Service Card 2 -->
@@ -226,8 +229,10 @@
                             <h3>Diwali Pooja</h3>
                             <p>Diwali is the festival of Laxmi, the Goddess of prosperity and wealth. It is believed
                                 that Goddess Laxmi visits everyone...</p>
-                            <span class="price">Price: On Request</span>
-                            <a href="book-now.html" class="btn btn-outline">Book Now</a>
+                            <div class="service-actions" style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                                <button class="btn btn-primary" onclick="openServiceModal('diwali')">View Details</button>
+                                <a href="book-now.html" class="btn btn-outline">Book Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Service Card 3 -->
@@ -239,8 +244,10 @@
                             <h3>Marriage Ceremony</h3>
                             <p>Marriages, according to Hindu beliefs are made in heaven, and once you are married, the
                                 bond is supposed to last for...</p>
-                            <span class="price">Price: On Request</span>
-                            <a href="book-now.html" class="btn btn-outline">Book Now</a>
+                            <div class="service-actions" style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                                <button class="btn btn-primary" onclick="openServiceModal('wedding')">View Details</button>
+                                <a href="book-now.html" class="btn btn-outline">Book Now</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Service Card 4 -->
@@ -252,13 +259,15 @@
                             <h3>Office Pooja</h3>
                             <p>Office Opening Pooja is required before entering into a new office or working place to
                                 have a positive and fresh start...</p>
-                            <span class="price">Price: On Request</span>
-                            <a href="book-now.html" class="btn btn-outline">Book Now</a>
+                            <div class="service-actions" style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                                <button class="btn btn-primary" onclick="openServiceModal('office')">View Details</button>
+                                <a href="book-now.html" class="btn btn-outline">Book Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center" style="margin-top: 40px;">
-                    <a href="#" class="btn btn-primary">View All Services</a>
+                    <a href="javascript:void(0)" onclick="openAllServicesModal()" class="btn btn-primary">View All Services</a>
                 </div>
             </div>
         </section>
@@ -383,6 +392,478 @@
             </div>
         </div>
     </footer>
+
+    <!-- Premium Service Details Modal -->
+    <div id="serviceModal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeServiceModal()"><i class="fas fa-times"></i></button>
+            <div class="modal-content">
+                <div class="modal-img-wrapper">
+                    <img id="modalImg" src="" alt="Service Image">
+                    <div class="modal-price-badge" id="modalPrice">Price: On Request</div>
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalTitle">Service Title</h2>
+                    <p id="modalDesc" class="modal-desc">Service full description goes here...</p>
+                    
+                    <div class="modal-benefits">
+                        <h3>Key Benefits</h3>
+                        <ul id="modalBenefitsList">
+                            <!-- Benefits will be injected here -->
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-cta">
+                        <p>Ready to experience a divine pooja?</p>
+                        <a href="book-now.html" class="btn btn-primary" style="width: 100%;">Book This Service Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Services Full-Page Modal -->
+    <div id="allServicesModal" class="all-services-modal">
+        <div class="all-services-header">
+            <h2>All Puja Services</h2>
+            <button class="all-services-close" onclick="closeAllServicesModal()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="all-services-toolbar">
+            <div class="category-pills">
+                <button class="pill active">All Pujas</button>
+                <button class="pill">Puja On Special Event</button>
+                <button class="pill">Upcoming Pujas</button>
+                <button class="pill">Dosha Nivaran Puja</button>
+                <button class="pill">Mukti Karmas</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for services...">
+            </div>
+        </div>
+        
+        <div class="all-services-grid" id="allServicesGrid">
+
+        <!-- Card 1 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/99p_grihapraveshpuja.webp" alt="Griha Pravesh Puja">
+            </div>
+            <div class="card-body">
+                <h3>Griha Pravesh Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>4.0</span>
+                    </div>
+                    <span class="conducted">1722 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('grihapraveshpuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_vishnu.png" alt="Satyanarayan Puja">
+            </div>
+            <div class="card-body">
+                <h3>Satyanarayan Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.1</span>
+                    </div>
+                    <span class="conducted">1506 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('satyanarayanpuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_marriage.png" alt="Marriage Puja">
+            </div>
+            <div class="card-body">
+                <h3>Marriage Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>4.0</span>
+                    </div>
+                    <span class="conducted">885 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('marriagepuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/99p_rudrabhishekpuja.webp" alt="Maha Mrityunjaya (Jaap) Puja">
+            </div>
+            <div class="card-body">
+                <h3>Maha Mrityunjaya (Jaap) Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.7</span>
+                    </div>
+                    <span class="conducted">71 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('mahamrityunjayajaappuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/99p_rudrabhishekpuja.webp" alt="Shiv Puran Puja">
+            </div>
+            <div class="card-body">
+                <h3>Shiv Puran Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.3</span>
+                    </div>
+                    <span class="conducted">54 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('shivpuranpuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_kalash.png" alt="Saraswati Puja">
+            </div>
+            <div class="card-body">
+                <h3>Saraswati Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.5</span>
+                    </div>
+                    <span class="conducted">297 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('saraswatipuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/service_diwali_1779175619459.png" alt="Diwali Puja">
+            </div>
+            <div class="card-body">
+                <h3>Diwali Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>5.0</span>
+                    </div>
+                    <span class="conducted">290 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('diwalipuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_kalash.png" alt="Dhanteras Puja">
+            </div>
+            <div class="card-body">
+                <h3>Dhanteras Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.9</span>
+                    </div>
+                    <span class="conducted">67 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('dhanteraspuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_vishnu.png" alt="Govardhan Puja">
+            </div>
+            <div class="card-body">
+                <h3>Govardhan Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>5.0</span>
+                    </div>
+                    <span class="conducted">16 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('govardhanpuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_kalash.png" alt="Mahalakshmi Puja">
+            </div>
+            <div class="card-body">
+                <h3>Mahalakshmi Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.5</span>
+                    </div>
+                    <span class="conducted">130 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('mahalakshmipuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_kalash.png" alt="Navratri Puja">
+            </div>
+            <div class="card-body">
+                <h3>Navratri Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.4</span>
+                    </div>
+                    <span class="conducted">250 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('navratripuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_kalash.png" alt="Durga Puja">
+            </div>
+            <div class="card-body">
+                <h3>Durga Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.4</span>
+                    </div>
+                    <span class="conducted">71 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('durgapuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_ganesha.png" alt="Ganesh Chaturthi Puja">
+            </div>
+            <div class="card-body">
+                <h3>Ganesh Chaturthi Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.7</span>
+                    </div>
+                    <span class="conducted">878 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('ganeshchaturthipuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_vishnu.png" alt="Krishna Janmashtami Puja">
+            </div>
+            <div class="card-body">
+                <h3>Krishna Janmashtami Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.3</span>
+                    </div>
+                    <span class="conducted">24 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('krishnajanmashtamipuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/99p_rudrabhishekpuja.webp" alt="Hanuman Janmotsav Puja">
+            </div>
+            <div class="card-body">
+                <h3>Hanuman Janmotsav Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.3</span>
+                    </div>
+                    <span class="conducted">34 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('hanumanjanmotsavpuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/puja_vishnu.png" alt="Ram Navami Puja">
+            </div>
+            <div class="card-body">
+                <h3>Ram Navami Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.1</span>
+                    </div>
+                    <span class="conducted">12 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('ramnavamipuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/99p_garudpuranpath.webp" alt="Garud Puran Path">
+            </div>
+            <div class="card-body">
+                <h3>Garud Puran Path</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.9</span>
+                    </div>
+                    <span class="conducted">509 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('garudpuranpath')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/99p_rudrabhishekpuja.webp" alt="Rudrabhishek Puja">
+            </div>
+            <div class="card-body">
+                <h3>Rudrabhishek Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.9</span>
+                    </div>
+                    <span class="conducted">876 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('rudrabhishekpuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/99p_lakshminarasimhahomam.webp" alt="Lakshmi Narasimha Homam">
+            </div>
+            <div class="card-body">
+                <h3>Lakshmi Narasimha Homam</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.8</span>
+                    </div>
+                    <span class="conducted">210 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('lakshminarasimhahomam')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="all-service-card">
+            <div class="card-img-wrapper">
+                <span class="badge-popular">Popular</span>
+                <img src="assets/images/99p_ganeshpuja.webp" alt="Ganesh Puja">
+            </div>
+            <div class="card-body">
+                <h3>Ganesh Puja</h3>
+                <div class="card-stats">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.6</span>
+                    </div>
+                    <span class="conducted">790 Conducted</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline" onclick="closeAllServicesModal(); openServiceModal('ganeshpuja')">View Details</button>
+                    <a href="book-now.html" class="btn btn-primary"><i class="far fa-calendar-alt"></i> Book Now</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
