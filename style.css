@@ -679,7 +679,8 @@ h1, h2, h3, h4 {
         padding-left: 20px;
         display: none;
     }
-    .dropdown.active .dropdown-menu {
+    .dropdown.active > .dropdown-menu,
+    .dropdown-submenu.active > .dropdown-menu {
         display: block;
     }
     .mobile-menu-btn {

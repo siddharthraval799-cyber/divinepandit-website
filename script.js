@@ -10,15 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Dropdown Toggle for Mobile
-    const dropdowns = document.querySelectorAll('.dropdown');
+    // Dropdown and Submenu Toggle for Mobile
+    const dropdowns = document.querySelectorAll('.dropdown, .dropdown-submenu');
     
     dropdowns.forEach(dropdown => {
         dropdown.addEventListener('click', (e) => {
             if (window.innerWidth <= 992) {
-                // Prevent default if clicking the link itself to just open dropdown
-                if (e.target.tagName.toLowerCase() === 'a' && e.target.nextElementSibling) {
+                // Find the closest anchor tag that was clicked
+                const targetLink = e.target.closest('a');
+                
+                // If we clicked a link and it has a submenu next to it
+                if (targetLink && targetLink.nextElementSibling && targetLink.nextElementSibling.tagName.toLowerCase() === 'ul') {
+                    // Prevent navigation and stop event from bubbling up to parent dropdowns
                     e.preventDefault();
+                    e.stopPropagation();
+                    
+                    // Toggle the 'active' class on the current dropdown/submenu to show/hide its child ul
                     dropdown.classList.toggle('active');
                 }
             }
